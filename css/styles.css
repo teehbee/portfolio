@@ -171,6 +171,10 @@ header {
   margin-top: -4px;
 }
 
+.frontpage-text-container h1 {
+  padding-left: 1rem;
+}
+
 
 
 /* Media queries */ 
