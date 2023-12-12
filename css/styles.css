@@ -34,88 +34,110 @@ a {
 
 /* Utility classes */
 
-/* Colours */
+  /* Colours */
 
-.salmon-color {
-  color: var(--salmon);
-}
+  .salmon-color {
+    color: var(--salmon);
+  }
 
-.white-color {
-  color: var(--whiteText);
-}
+  .white-color {
+    color: var(--whiteText);
+  }
 
-.white-background {
-  background: var(--whiteText);
-}
+  .white-background {
+    background: var(--whiteText);
+  }
 
-.blue-color {
-  color: var(--backgroundBlue);
-}
+  .blue-color {
+    color: var(--backgroundBlue);
+  }
 
-.blue-button-color {
-  color: var(--buttonBlue);
-}
+  .blue-button-color {
+    color: var(--buttonBlue);
+  }
 
-/* Flex */
+  .text-opacity {
+    opacity: 0.8;
+  }
 
-.flex {
-  display: flex;
-}
+  /* Flex */
 
-.flex-justify-end {
-  justify-content: end;
-}
+  .flex {
+    display: flex;
+  }
 
-.flex-justify-space-between {
-  justify-content: space-between;
-}
+  .flex-justify-end {
+    justify-content: end;
+  }
 
-.flex-justify-center {
-  justify-content: center;
-}
+  .flex-justify-space-between {
+    justify-content: space-between;
+  }
 
-.flex-gap-1-rem {
-  gap: 1rem;
-}
+  .flex-justify-space-around {
+    justify-content: space-around;
+  }
 
-.flex-direction-column {
-  flex-direction: column;
-}
+  .flex-justify-center {
+    justify-content: center;
+  }
 
-.flex-align-start {
-  align-items: start;
-}
+  .flex-gap-1-rem {
+    gap: 1rem;
+  }
 
+  .flex-direction-column {
+    flex-direction: column;
+  }
 
+  .flex-align-start {
+    align-items: start;
+  }
 
-/* Text align */
+  .flex-align-end {
+    align-items: end;
+  }
 
-.text-align-center {
-  text-align: center;
-}
+  .flex-1 {
+    flex: 1;
+  }
 
-/* Margin and padding */
+  .flex-2 {
+    flex: 2;
+  }
 
-.image-responsive {
-  height: auto;
-  width: 100%;
-}
+  .flex-3 {
+    flex: 3;
+  }
 
-.margin-center {
-  margin: 0 auto;
-}
+  /* Text align */
 
-.margin-0 {
-  margin: 0;
-}
+  .text-align-center {
+    text-align: center;
+  }
 
-.padding-top-1-rem {
-  padding-top: 1rem;
-}
+  /* Margin and padding */
 
-.padding-1-rem {
-  padding: 1rem;
-}
+  .image-responsive {
+    height: auto;
+    width: 100%;
+  }
+
+  .margin-center {
+    margin: 0 auto;
+  }
+
+  .margin-0 {
+    margin: 0;
+  }
+
+  .padding-top-1-rem {
+    padding-top: 1rem;
+  }
+
+  .padding-1-rem {
+    padding: 1rem;
+  }
 
 /* buttons */ 
 
@@ -179,11 +201,91 @@ header {
   padding-right: 1rem;
 }
 
+/* About */ 
+
+.about-logos-mobile {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.about-logos-mobile img {
+  height: 35px;
+}
+
+.about-content {
+  padding: 6rem 2rem 0;
+  padding-top: 6rem;
+}
+
+.about-content a {
+  margin-top: 2rem;
+}
+
+.about-bottom-and-right-content {
+  background: var(--whiteText);
+  padding: 1rem;
+  margin: 2rem 1rem 0;
+}
+
+.about-bottom-and-right-content h1 {
+  font-size: 1.5rem;
+}
 
 
 /* Media queries */ 
 
 @media screen and (min-width: 768px) {
+  
+    /* About */
+
+    .header-desktop-about {
+      position: absolute;
+      top: 1.5rem;
+      left: 3rem;
+    }
+
+    .about-logos-mobile {
+      display: none;
+    }
+
+    .header-desktop-about a {
+      font-size: 2rem;
+    }
+
+    .about-top-and-left-content img {
+      max-width: 332px;
+    }
+
+    .flex-desktop-768px {
+      display: flex;
+    }
+
+    .about-top-and-left-content {
+      height: 100vh;
+    }
+
+    .about-top-and-left-content img {
+      max-width: 85%;
+      margin-top: 4rem;
+    }
+
+    .about-top-and-left-content a {
+      margin-bottom: 6rem;
+    }
+
+    .about-far-right-content {
+      margin-bottom: 5rem;
+      padding: 0 1rem;
+    }
+
+    .about-bottom-and-right-content h1 {
+      font-size: 3rem;
+    }
+
+    .about-bottom-and-right-content p {
+      font-size: 1.5rem;
+    }
 
 }
 
@@ -194,6 +296,8 @@ header {
     top: 0;
     left: 0;
   }
+
+  /* Landing page */
 
   .frontpage-text-container {
     padding: 3rem;
@@ -209,7 +313,7 @@ header {
     display: flex;
   }
 
-  .flex-desktop {
+  .flex-desktop-992px {
     display: flex;
   } 
 
@@ -279,6 +383,7 @@ header {
   .frontpage-logos {
     padding-right: 0;
   }
+
 }
 
 
