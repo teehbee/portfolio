@@ -110,6 +110,12 @@ a {
     flex: 3;
   }
 
+  /* Display */ 
+
+  .display-none {
+    display: none;
+  }
+
   /* Text align */
 
   .text-align-center {
@@ -224,7 +230,7 @@ header {
 
 .about-bottom-and-right-content {
   background: var(--whiteText);
-  padding: 1rem;
+  padding: 3rem;
   margin: 2rem 1rem 0;
 }
 
@@ -272,10 +278,11 @@ header {
 
     .about-top-and-left-content a {
       margin-bottom: 6rem;
+      font-size: 1rem;
     }
 
     .about-far-right-content {
-      margin-bottom: 5rem;
+      margin-bottom: 8rem;
       padding: 0 1rem;
     }
 
