@@ -433,6 +433,7 @@ header {
 
     .portfolio-logos-desktop {
       margin-top: auto;
+      display: block;
     }
     
 
